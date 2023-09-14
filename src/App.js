@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Cart from './Components/BaitTapThucHanhLayout/Cart';
+import Footer from './Components/BaitTapThucHanhLayout/Footer';
+import Header from './Components/BaitTapThucHanhLayout/Header';
+import Navbar from './Components/BaitTapThucHanhLayout/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <Header/>
+      <Cart/>
+      <Footer/>
     </div>
   );
 }
